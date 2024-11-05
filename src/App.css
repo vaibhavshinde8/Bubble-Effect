@@ -1,0 +1,196 @@
+.App {
+  text-align: center;
+  min-height: 130vh;
+}
+
+.bubble-container {
+  position: fixed;
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  z-index: 1;
+  pointer-events: none;
+}
+
+.bubble {
+  width: 100px; 
+  height: 100px; 
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.8) 30%, rgba(173, 216, 230, 0.8) 70%);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2), 0 0 30px rgba(173, 216, 230, 0.5);
+  transition: width 0.2s, height 0.2s, transform 0.2s; 
+  animation: bubbleAnimation 1s infinite alternate;
+}
+
+.burst {
+  animation: blastAnimation 0.5s forwards; 
+}
+
+.blast-text {
+  font-size: 2rem;
+  color: red;
+  position: absolute; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  z-index: 2;
+}
+
+.content {
+  margin-top: 150px; 
+  height: 130vh; 
+}
+
+
+.section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: white;
+}
+
+.sky-blue { background-color: skyblue; }
+.light-green { background-color: lightgreen; }
+.coral { background-color: coral; }
+.lavender { background-color: lavender; }
+.peach { background-color: peachpuff; }
+.light-yellow { background-color: lightyellow; }
+.lightpink { background-color: lightpink; }
+.beige { background-color: beige; }
+
+@keyframes bubbleAnimation {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+
+@keyframes blastAnimation {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2); 
+    opacity: 0;
+  }
+}
+.App {
+  text-align: center;
+  min-height: 130vh;
+}
+
+.bubble-container {
+  position: fixed;
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  z-index: 1;
+  pointer-events: none; 
+}
+
+.bubble {
+  width: 100px; 
+  height: 100px; 
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.8) 30%, rgba(173, 216, 230, 0.8) 70%);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2), 0 0 30px rgba(173, 216, 230, 0.5);
+  transition: width 0.2s, height 0.2s, transform 0.2s; 
+  animation: bubbleAnimation 1s infinite alternate;
+}
+
+.burst {
+  animation: burstAnimation 0.6s forwards; 
+}
+
+.blast-text {
+  font-size: 2rem;
+  color: red;
+  position: absolute; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  z-index: 2;
+}
+
+.content {
+  margin-top: 150px; 
+  height: 130vh; 
+}
+
+.section {
+  height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: white;
+}
+
+.sky-blue { background-color: skyblue; }
+.light-green { background-color: lightgreen; }
+.coral { background-color: coral; }
+.lavender { background-color: lavender; }
+.peach { background-color: peachpuff; }
+.light-yellow { background-color: lightyellow; }
+.lightpink { background-color: lightpink; }
+.beige { background-color: beige; }
+
+
+@keyframes bubbleAnimation {
+  0% {
+    transform: scale(1); 
+  }
+  100% {
+    transform: scale(1.05); 
+  }
+}
+
+
+@keyframes burstAnimation {
+  0% {
+    transform: scale(1) rotate(0deg); 
+    opacity: 1; 
+  }
+  50% {
+    transform: scale(1.5) rotate(10deg); 
+    opacity: 1; 
+  }
+  100% {
+    transform: scale(0) rotate(-10deg); 
+    opacity: 0; 
+  }
+}
+
+
+.burst {
+  animation: burstAnimation 0.6s forwards; 
+}
+
+
+@keyframes burstAnimation {
+  0% {
+    transform: scale(1) rotate(0deg); 
+    opacity: 1; 
+  }
+  50% {
+    transform: scale(1.5) rotate(10deg);
+    opacity: 1; 
+  }
+  100% {
+    transform: scale(0) rotate(-10deg); 
+    opacity: 0; 
+  }
+}
+.header {
+  font-size: 2.5rem; 
+  color: #333; 
+  margin: 20px 0;
+}
+
+
